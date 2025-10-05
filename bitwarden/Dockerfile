@@ -1,6 +1,6 @@
-FROM alpine:latest
+FROM node:current-alpine3.21
 
-RUN apk update && apk add npm --no-cache
+RUN apk update && apk add jq --no-cache
 RUN npm install -g @bitwarden/cli
 
 COPY ./crontab /crontab
