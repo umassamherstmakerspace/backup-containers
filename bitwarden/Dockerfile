@@ -8,4 +8,4 @@ RUN npm install -g @bitwarden/cli
 COPY ./entrypoint.sh /entrypoint.sh
 COPY ./backup.sh /backup.sh
 
-CMD ["/entrypoint.sh"]
+CMD ["ash", "/entrypoint.sh"]
